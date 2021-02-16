@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><h1 class="logo-title">Libr<span class="logo-span">ario</span></h1></div>
+        <button class="button form-button add-book-button">Add book</button>
+    </header>
+
+    <div class="form-wrapper form-hide">
+        <div class="form-container">
+            <div class="form-header">
+                <button class="button-close-form form-button">X</button>
+            </div>
+            <form action="" class="form">
+                <input type="text" placeholder="Name of the book" required>
+                <input type="text" placeholder="Author" required>
+                <input type="number" placeholder="Pages" min="1" required>
+                <select name="" id="">
+                    <option value="" selected disabled hidden>Did you finish the book?</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <button type="submit" class="button submit-book-button">Add book</button>
+            </form>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="book">
+            <ul>
+                <li>Name: La biblioteca de los muertos</li>
+                <li>Author: No idea</li>
+                <li>Year: 1999</li>
+                <li><input type="checkbox" type="read"><label for="read">Read</label></li>
+            </ul>
+        </div>
+
+        <div class="book">
+            <ul>
+                <li>Name: La biblioteca de los muertos</li>
+                <li>Author: No idea</li>
+                <li>Year: 1999</li>
+                <li><input type="checkbox" type="read"><label for="read">Read</label></li>
+            </ul>
+        </div>
+
+        <div class="book">
+            <ul>
+                <li>Name: La biblioteca de los muertos</li>
+                <li>Author: No idea</li>
+                <li>Year: 1999</li>
+                <li><input type="checkbox" type="read"><label for="read">Read</label></li>
+            </ul>
+        </div>
+
+        <div class="book">
+            <ul>
+                <li>Name: La biblioteca de los muertos</li>
+                <li>Author: No idea</li>
+                <li>Year: 1999</li>
+                <li><input type="checkbox" type="read"><label for="read">Read</label></li>
+            </ul>
+        </div>
+
+        <div class="book">
+            <ul>
+                <li>Name: La biblioteca de los muertos</li>
+                <li>Author: No idea</li>
+                <li>Year: 1999</li>
+                <li><input type="checkbox" type="read"><label for="read">Read</label></li>
+            </ul>
+
+            <button class="button remove-book-button">Remove book</button>
+        </div>
+
+        <div class="book">
+            <ul>
+                <li>Name: La biblioteca de los muertos</li>
+                <li>Author: No idea</li>
+                <li>Year: 1999</li>
+                <li><input type="checkbox" type="read"><label for="read">Read</label></li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

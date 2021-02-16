@@ -1,0 +1,166 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 80px;
+    background: #ee1e1e;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .add-book-button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.add-book-button, .submit-book-button, .button-remove-book {
+    padding: 12.5px 17.5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 100px;
+    background: black;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(0,0,0,.9);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+main {
+    height: 100vh;
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    grid-template-rows: repeat(auto-fill, 250px);
+}
+
+.book {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 30px;
+    background: #1183fe;
+    position: relative;
+
+    .button-remove-book {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 35px;
+    }
+}
+
+ul {
+
+    li {
+        list-style: none;
+        padding: 5px;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+          }
+
+        &::-webkit-scrollbar-thumb {
+        background-color: #fff;
+        border-radius: 100px;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(0,0,0,.5)
+        }
+    }
+}
+
+.form-wrapper {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    .form-container {
+        height: 350px;
+        width: 300px;
+        background: #939ffe;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .form-header {
+            height: 40px;
+            width: 100%;
+            background: black;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .button-close-form {
+                margin-right: 10px;
+                padding: 2.5px 5px;
+            }
+        }
+
+        form {
+            width: 90%;
+            margin-top: 25px;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            border-radius: 100px;
+            border: none;
+            padding: 10px 20px;
+            text-transform: capitalize;
+
+            &::placeholder {
+                text-transform: none;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .submit-book-button {
+            margin-top: 40px;
+        }
+    }
+}
+
+.form-display {
+    display: block;
+}
+
+.form-hide {
+    display: none;
+}

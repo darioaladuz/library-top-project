@@ -1,2 +1,2 @@
-# library-top-project
-A small library web-app that allows you to keep track of the books you read. (Project for The Odin Project)
+# library-top
+A small library web app that lets you keep track of the books you read/are reading/are going to read. (Project for the odin project)
