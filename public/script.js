@@ -1,4 +1,3 @@
-
 let books = [];
 
 class Book {

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Library Project</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -89,6 +91,22 @@
             </ul>
         </div>
     </main>
+
+    <script>
+        var firebaseConfig = {
+    apiKey: "AIzaSyCyyrr_Pu963jh34LwbWko3EzRdj03hf3k",
+    authDomain: "library-project-affa5.firebaseapp.com",
+    projectId: "library-project-affa5",
+    storageBucket: "library-project-affa5.appspot.com",
+    messagingSenderId: "86382435771",
+    appId: "1:86382435771:web:d3593557ec38ed83ef389e"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshots: true })
+    </script>
 
     <script src="script.js"></script>
 </body>
